@@ -51,3 +51,5 @@ about:
 extra:
   recipe-maintainers:
     - xhochy
+    - h-vetinari
+    - conda-forge/bazel
