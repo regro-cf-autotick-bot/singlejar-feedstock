@@ -1,11 +1,11 @@
-About singlejar
-===============
+About singlejar-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/singlejar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bazelbuild/bazel/tree/master/src/tools/singlejar
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/singlejar-feedstock/blob/main/LICENSE.txt)
 
 Summary: A tool for generating singleton jars
 
