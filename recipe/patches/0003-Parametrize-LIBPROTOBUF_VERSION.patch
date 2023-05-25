@@ -1,14 +1,14 @@
-From ebdf5276ca7a53ba79a754dc451a29c58634169b Mon Sep 17 00:00:00 2001
+From 42e19f9e48b33ef98524411dd2c6bdf3e5b75bdb Mon Sep 17 00:00:00 2001
 From: "Uwe L. Korn" <uwe.korn@quantco.com>
 Date: Thu, 28 Oct 2021 11:28:13 +0200
-Subject: [PATCH 3/3] Parametrize LIBPROTOBUF_VERSION
+Subject: [PATCH 3/4] Parametrize LIBPROTOBUF_VERSION
 
 ---
  WORKSPACE | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/WORKSPACE b/WORKSPACE
-index 2cf3d945e0..0720d49d99 100644
+index 97e0b73b16..27583e86a4 100644
 --- a/WORKSPACE
 +++ b/WORKSPACE
 @@ -119,8 +119,8 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
@@ -22,6 +22,3 @@ index 2cf3d945e0..0720d49d99 100644
      ],
      repositories = [
          "https://repo1.maven.org/maven2",
--- 
-2.38.1.windows.1
-

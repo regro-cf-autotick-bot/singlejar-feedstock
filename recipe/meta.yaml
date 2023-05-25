@@ -10,10 +10,11 @@ source:
   - url: {{ base_url }}/{{ version }}/bazel-{{ version }}-dist.zip
     sha256: f1e8f788637ac574d471d619d2096baaca04a19b57a034399e079633db441945
     patches:
-      # Keep these patches in sync with the ones from bazel-feedstock.
+      # Keep these patches in sync with the relevant ones from bazel-feedstock.
       - patches/0001-allow-args-to-be-passed-to-bazel_build.patch
       - patches/0002-Build-with-native-dependencies.patch
       - patches/0003-Parametrize-LIBPROTOBUF_VERSION.patch
+      - patches/0004-use-C-17.patch
   - url: {{ base_url }}/{{ version }}/bazel_nojdk-{{ version }}-darwin-x86_64  # [build_platform == "osx-64"]
     sha256: 8f4cfd83228cc9c3d0eb5009e88a93b2053a71860a95732eaa05c515b7b66e62  # [build_platform == "osx-64"]
     fn: bazel  # [build_platform == "osx-64"]
