@@ -1,14 +1,14 @@
-From 9a9ac367b7e64e336e6fe4a99c97acf8ffcd5191 Mon Sep 17 00:00:00 2001
+From 687871786af877e06b156c80df4ea41bca3b39c6 Mon Sep 17 00:00:00 2001
 From: "H. Vetinari" <h.vetinari@gmx.com>
 Date: Thu, 25 May 2023 20:35:02 +1100
-Subject: [PATCH 4/4] use C++17
+Subject: [PATCH 4/5] use C++17
 
 ---
  .bazelrc | 2 ++
  1 file changed, 2 insertions(+)
 
 diff --git a/.bazelrc b/.bazelrc
-index 20921ea73c..7dc5a94810 100644
+index 20921ea..7dc5a94 100755
 --- a/.bazelrc
 +++ b/.bazelrc
 @@ -34,6 +34,8 @@ build:bzlmod --experimental_enable_bzlmod
@@ -20,3 +20,6 @@ index 20921ea73c..7dc5a94810 100644
  # User-specific .bazelrc
  try-import %workspace%/user.bazelrc
  
+-- 
+2.39.2 (Apple Git-143)
+
