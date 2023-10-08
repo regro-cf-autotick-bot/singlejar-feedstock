@@ -15,7 +15,7 @@ source:
       - patches/0002-Build-with-native-dependencies.patch
       - patches/0003-Match-version-of-protobuf-java-with-libprotobuf.patch
       - patches/0004-use-C-17.patch
-      - patches/0005-Link-to-abseil-libraries.patch  # [libprotobuf != "3.21"]
+      - patches/0005-Link-to-abseil-libraries.patch
 
   - url: {{ base_url }}/{{ version }}/bazel_nojdk-{{ version }}-darwin-x86_64  # [build_platform == "osx-64"]
     sha256: ad97d9c825afc797532f6c43577afc76b6eb14673496cdcd1ee23930ee5a743e   # [build_platform == "osx-64"]
