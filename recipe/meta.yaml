@@ -38,6 +38,7 @@ requirements:
     - bazel-toolchain
     - openjdk
     - libprotobuf
+    - sed
   host:
     - libabseil
     - libprotobuf

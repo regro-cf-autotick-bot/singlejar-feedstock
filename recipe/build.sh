@@ -2,6 +2,8 @@
 
 set -euxo pipefail
 
+sed -i '/incompatible_enable_cc_toolchain_resolution/d' .bazelrc
+
 source gen-bazel-toolchain
 
 export PROTOC_VERSION=$(conda list -p $PREFIX libprotobuf | grep -v '^#' | tr -s ' ' | cut -f 2 -d ' ' | sed -E 's/^[0-9]+\.([0-9]+\.[0-9]+)$/\1/')
