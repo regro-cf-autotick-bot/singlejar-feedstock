@@ -2,6 +2,10 @@
 
 set -euxo pipefail
 
+if [[ "${target_platform}" == osx-* ]]; then
+  export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+fi
+
 source gen-bazel-toolchain
 
 export LIBPROTOBUF_VERSION=$(conda list -p $PREFIX libprotobuf | grep -v '^#' | tr -s ' ' | cut -f 2 -d ' ')
