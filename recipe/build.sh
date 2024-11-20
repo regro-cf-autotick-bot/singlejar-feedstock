@@ -2,6 +2,11 @@
 
 set -euxo pipefail
 
+if [[ "${target_platform}" == osx-* ]]; then
+    # See also https://gitlab.kitware.com/cmake/cmake/-/issues/25755
+    export CFLAGS="${CFLAGS} -fno-define-target-os-macros"
+fi
+
 source gen-bazel-toolchain
 
 export PROTOC_VERSION=$(conda list -p $PREFIX libprotobuf | grep -v '^#' | tr -s ' ' | cut -f 2 -d ' ' | sed -E 's/^[0-9]+\.([0-9]+\.[0-9]+)$/\1/')
